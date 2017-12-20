@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+  <title> 小辣椒大新聞 </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="navbar">
+    <div id="title">
+      <a href="index.html">
+        <img src="img/logo.png" alt="logo">
+      </a>
+    </div>
+    <div id="nav">
+      <ul>
+        <a href="index.html"><li> HOME </li></a>
+        <a href="news.html"><li> NEWS </li></a>
+        <a href="news.html"><li> ABOUT </li></a>
+      </ul>
+    </div>
+  </div>
+
+  <div id="mainNews">
+    <div id="subnav">
+      <div class="navlies active">
+        <div class="navliesEach">
+          <span> 情報快遞 </span> <br>
+          <span> Chili Today </span>
+        </div>
+      </div>
+      <div class="navlies">
+        <div class="navliesEach">
+          <span> 即時新聞 </span> <br>
+          <span> Immediate </span>
+        </div>
+      </div>
+      <div class="navlies">
+        <div class="navliesEach">
+          <span> 本日日報 </span> <br>
+          <span> Newspaper </span>
+        </div>
+      </div>
+      <div class="navlies">
+        <div class="navliesEach">
+          <span> 火線話題 </span> <br>
+          <span> Hot News </span>
+        </div>
+      </div>
+      <div id="searchSec"></div>
+    </div>
+
+    <div id="newslist">
+      <div id="newsSum">
+        <div id="circle"></div>
+        <p> 情報快遞 </p>
+        <div id="lineee"></div>
+      </div>
+      <ul>
+        <li>
+          <div class="arrow"></div>
+          <a href="https://goo.gl/forms/HSnKJpaP3LV7Qw653">
+            19:07　冷氣團報到 氣象局：中南部不排除降至10度
+          </a>
+        </li>
+        
+        <li>
+          <div class="arrow"></div>
+          <a href="https://goo.gl/forms/Yui7pX9THDaT4mO82">
+            18:59　布萊恩期許 湖人的未來會更好
+          </a>
+        </li>
+        
+        <li>
+          <div class="arrow"></div>
+          <a href="https://goo.gl/forms/ffD6bAPjFPjH8Ew13">
+            18:50　【有片】《自然》2017十大科學人物 台裔科學家劉如謙入選
+          </a>
+        </li>
+
+        <li>
+          <div class="arrow"></div>
+          <a href="https://goo.gl/forms/xWFzzNcsVBL5jlIu2">
+            18:23　謝和弦嗨到脫衣 美女主播秀吹技
+          </a>
+        </li>
+        
+        <li>
+          <div class="arrow"></div>
+          <a href="https://goo.gl/forms/3mME4ZrdGlWlnNEN2">
+            17:46　多益將改制 學生畢業門檻提高
+          </a>
+        </li>
+        
+        <li>
+          <div class="arrow"></div>
+          <a href="https://goo.gl/forms/AgvCf5sQGkEVmSHt1">
+            17:18　用愛跨越荊棘 同婚路起步走
+          </a>
+        </li>
+        
+        <li>
+          <div class="arrow"></div>
+          <a href="https://goo.gl/forms/7YVnqizXAOVt63pC2">
+            16:39　黃國昌罷免案同意票未過門檻 不通過[影]
+          </a>
+        </li>
+        
+        <li>
+          <div class="arrow"></div>
+          <a href="https://goo.gl/forms/alUOE43Kn0byb7P23">
+            16:22　【無國界記者組織：中國關押記者全球最多
+          </a>
+        </li>
+        
+        <li>
+          <div class="arrow"></div>
+          <a href="https://goo.gl/forms/dDGtlCGAMoCjt7X92">
+            15:44　麥利希拉演唱會與粉絲互動超親密 直接讓人摸「鮑鮑」(內有影片)</a></li>
+        
+        <li>
+          <div class="arrow"></div>
+          <a href="https://goo.gl/forms/OqWMBRAqz5NCjN0C2">
+            14:36　南加州野火不尋常 科學家揭背後原因
+          </a>
+        </li>
+        
+        <li>
+          <div class="arrow"></div>
+          <a href="https://goo.gl/forms/RcDp0Ww6FwotTLye2">
+            13:10　元旦3天連假 國道0至5時免收費
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; All right reserved. 2017 Dec. Chili News
+  </div>
+
+  <script>
+    document.getElementsByClassName("navlies")[0].addEventListener("click", function () {
+      removeActive(0)
+      this.className += " active"
+    })
+    document.getElementsByClassName("navlies")[1].addEventListener("click", function () {
+      removeActive(1)
+      this.className += " active"
+    })
+    document.getElementsByClassName("navlies")[2].addEventListener("click", function () {
+      removeActive(2)
+      this.className += " active"
+    })
+    document.getElementsByClassName("navlies")[3].addEventListener("click", function () {
+      removeActive(3)
+      this.className += " active"
+    })
+
+    function removeActive(int) {
+      switch (int) {
+        case 0:
+          document.getElementsByClassName("navlies")[1].classList.remove("active")
+          document.getElementsByClassName("navlies")[2].classList.remove("active")
+          document.getElementsByClassName("navlies")[3].classList.remove("active")
+        case 1:
+          document.getElementsByClassName("navlies")[0].classList.remove("active")
+          document.getElementsByClassName("navlies")[2].classList.remove("active")
+          document.getElementsByClassName("navlies")[3].classList.remove("active")
+        case 2:
+          document.getElementsByClassName("navlies")[0].classList.remove("active")
+          document.getElementsByClassName("navlies")[1].classList.remove("active")
+          document.getElementsByClassName("navlies")[3].classList.remove("active")
+        case 3:
+          document.getElementsByClassName("navlies")[0].classList.remove("active")
+          document.getElementsByClassName("navlies")[1].classList.remove("active")
+          document.getElementsByClassName("navlies")[2].classList.remove("active")
+        default:
+          document.getElementsByClassName("navlies")[0].classList.remove("active")
+          document.getElementsByClassName("navlies")[1].classList.remove("active")
+          document.getElementsByClassName("navlies")[2].classList.remove("active")
+          document.getElementsByClassName("navlies")[3].classList.remove("active")
+      }
+    }
+  </script>
+</body>
+</html>
